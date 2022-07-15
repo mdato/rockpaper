@@ -98,7 +98,7 @@ onMounted(() => {
 
 <template>
   <div class="bg-gray-900 text-white text-center min-h-screen flex flex-col">
-    <header class="flex container mx-auto p-6 items-center justify-center mt-15 md:mt-20">
+    <header class="flex container mx-auto p-6 items-center justify-center mt-24 md:mt-20">
       <img
         src="./assets/all.svg"
         alt="Rock"
@@ -112,23 +112,23 @@ onMounted(() => {
       <div v-if="choice === null" class="flex items-center justify-center">
         <button
           @click="play('rock')"
-          class="bg-white rounded-full shadow-lg w-48 p-12 mx-2 md:mx-6 transition-colors duration-300 hover:bg-blue-500"
+          class="bg-gray-200 rounded-full shadow-lg w-[200px] md:w-48 p-4 md:p-4 mx-2 md:mx-6 transition-colors duration-300 hover:bg-blue-500"
         >
           <img src="./assets/rock.svg" alt="Rock" class="w-full" />
         </button>
 
         <button
           @click="play('paper')"
-          class="bg-white rounded-full shadow-lg w-48 p-12 mx-2 md:mx-6 transition-colors duration-300 hover:bg-red-500"
+          class="bg-gray-200 rounded-full shadow-lg w-48 p-4 md:p-8 mx-2 md:mx-6 transition-colors duration-300 hover:bg-red-500"
         >
-          <img src="./assets/paper.svg" alt="Paper" />
+          <img src="./assets/paper.svg" alt="Paper" class="w-full" />
         </button>
 
         <button
           @click="play('scissors')"
-          class="bg-white rounded-full shadow-lg w-48 p-12 mx-2 md:mx-6 transition-colors duration-300 hover:bg-green-500"
+          class="bg-gray-200 rounded-full shadow-lg w-48 p-4 md:p-8 mx-2 md:mx-6 transition-colors duration-300 hover:bg-green-500"
         >
-          <img src="./assets/scissors.svg" alt="Scissors" />
+          <img src="./assets/scissors.svg" alt="Scissors" class="w-full" />
         </button>
       </div>
 
